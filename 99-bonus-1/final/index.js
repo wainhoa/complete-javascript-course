@@ -2,7 +2,6 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 
-const json = fs.readFileSync(`${__dirname}/data/data.json`, 'utf-8');
 const laptopData = JSON.parse(json);
 
 const server = http.createServer((req, res) => {
